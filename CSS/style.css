@@ -56,11 +56,6 @@ header p {
   color: #fff;
 }
 
-/* a:link,
-a:visited {
-  color: rgba(25, 29, 255, 0.911);
-} */
-
 h1 {
   font-size: 55px;
   line-height: 1;
@@ -80,9 +75,11 @@ img {
 }
 
 .aboutme{
-  color:white;
+  margin:auto;
+  color: white;
+  text-shadow: black 0px 0px 20px;
   text-align: center;
-  font-size: 10px;
+  font-size: 13px;
   margin-top: 15px;
 }
 
@@ -128,47 +125,50 @@ footer {
   position: relative;
   top: 75px;
 }
+
+
+/* Styling parap of journey */
+.div1 h1, .div4 h1, .div7 h1, .div8 h1, .div10 h1, .div11 h1, .div12 h1 {
+  text-align: center;
+  color: rgba(25, 29, 255, 0.911);
+  font-size: 35px;
+  padding: 0.5px;
+
+}
+.div1 p, .div2 p, .div3 p, .div4 p, .div5 p, .div6 p, .div7 p, .div8 p, .div10 p, .div11 p, .div12 p{
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  padding: 0.5px;
+}
+
+/* My journey black bground */
+.parentgrid{
+  background-color: black !important;
+}
+
 /* grid */
-.parent gallery-grid {
+.parentgrid{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  grid-column-gap: 10px
   }
 
+.grid img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+  }
 
-.div1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.div2 {
-  grid-area: 1 / 3 / 2 / 4;
-}
-.div3 {
-  grid-area: 2 / 2 / 3 / 3;
-}
-.div4 {
-  grid-area: 2 / 4 / 3 / 5;
-}
-.div5 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-.div6 {
-  grid-area: 3 / 3 / 4 / 4;
-}
-.div7 {
-  grid-area: 4 / 4 / 5 / 5;
-}
-.div8 {
-  grid-area: 4 / 2 / 5 / 3;
-}
-.div9 {
-  grid-area: 5 / 1 / 6 / 2;
-}
-.div10 {
-  grid-area: 5 / 3 / 6 / 4;
-}
-
+  /* contact  */
+  .jake p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+  }
 @media screen and (min-width: 768px) {
   nav {
     background-color: #b8fbe5;
@@ -182,7 +182,7 @@ footer {
     align-items: center;
     gap: 1.5rem;
   }
-  .jake{
+  .jake p{
     text-align: center;
     color: white;
     font-size: 35px;
